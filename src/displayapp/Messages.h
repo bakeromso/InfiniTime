@@ -1,4 +1,5 @@
 #pragma once
+#include <cstdint>
 namespace Pinetime {
   namespace Applications {
     namespace Display {
@@ -9,6 +10,9 @@ namespace Pinetime {
         UpdateBleConnection,
         TouchEvent,
         ButtonPushed,
+        ButtonLongPressed,
+        ButtonLongerPressed,
+        ButtonDoubleClicked,
         NewNotification,
         TimerDone,
         BleFirmwareUpdateStarted,
@@ -16,7 +20,9 @@ namespace Pinetime {
         DimScreen,
         RestoreBrightness,
         AlarmTriggered,
-        Clock
+        Clock,
+        ShowPairingKey,
+        AlarmTriggered
       };
     }
   }
